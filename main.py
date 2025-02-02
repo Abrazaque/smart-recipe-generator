@@ -8,7 +8,6 @@ from collections import defaultdict
 from env import api_key
 
 client = Mistral(api_key=api_key)
-
 # Enhanced categories with dietary tags and cooking difficulty
 INGREDIENT_CATEGORIES = {
     "Vegetables": {
