@@ -7,6 +7,8 @@ import pandas as pd
 from collections import defaultdict
 from env import api_key
 
+api_key = st.Secret["MISTRAL_API_KEY"]
+
 client = Mistral(api_key=api_key)
 # Enhanced categories with dietary tags and cooking difficulty
 INGREDIENT_CATEGORIES = {
